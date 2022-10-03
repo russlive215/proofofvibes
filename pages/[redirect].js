@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Layout from "../components/Layout";
 
 const RedirectLinks = {
-  "/twitter": "https://twitter.com/nearhacks",
+  "/twitter": "https://twitter.com/VibesProof",
 };
 
 const Redirect = () => {
@@ -20,6 +20,6 @@ const Redirect = () => {
       window.location.href = window.location.pathname.toLowerCase();
     }
   }, []);
-  return <Layout pageTitle="NEAR Hacks" />;
+  return <Layout pageTitle="Proof of Vibes Twitter" />;
 };
 export default Redirect;
