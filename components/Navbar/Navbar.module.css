@@ -1,0 +1,142 @@
+.container {
+  padding: 1em 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* height: 5rem; */
+  gap: 2rem;
+}
+.btn {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  width: 10em;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  transition: all 0.2s ease-in;
+  border-radius: 9px;
+}
+.btn:hover {
+  color: #f08d13;
+}
+.container > svg {
+  height: 3.5rem;
+  width: fit-content;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.links > div {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.links > div span {
+  display: flex;
+  height: fit-content;
+}
+.links > div span svg {
+  width: 30px;
+}
+.arrow {
+  right: -5px;
+  bottom: 7px;
+  position: absolute;
+  width: 10px;
+  height: fit-content;
+  transition: all 300ms ease;
+}
+.links > div:hover .arrow {
+  transform: rotate(180deg);
+}
+.links > div span svg path {
+  transition: all 300ms ease;
+}
+.links > div span svg:hover path:first-child {
+  fill: #f08d13;
+}
+.links > div span svg:hover g {
+  fill: #f08d13;
+}
+.toolTip {
+  padding-top: 1rem;
+  position: absolute;
+  display: none;
+  top: 2rem;
+}
+.toolTip > div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 10px;
+  background: #3f4246;
+  width: 7.5rem;
+  gap: 11px;
+}
+.links > div:hover .toolTip {
+  animation: drop 300ms forwards;
+  display: flex;
+}
+.toolTip a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.toolTip a svg path,
+.toolTip a p {
+  transition: all 300ms ease;
+}
+.toolTip a:hover svg path:first-child {
+  fill: #3a2b80;
+}
+.toolTip a:hover svg path:last-child {
+  fill: #ffffff;
+}
+@keyframes drop {
+  from {
+    transform: translateY(-1em);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 660px) {
+  .links {
+    gap: 1rem;
+  }
+  .container > svg {
+    height: 50px;
+    width: fit-content;
+  }
+  .toolTip {
+    left: -2rem;
+  }
+  .toolTip > div {
+    width: 6rem;
+    padding: 8px;
+    gap: 5px;
+  }
+  .toolTip a svg {
+    width: 24px;
+  }
+  .toolTip a p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .links > div span svg {
+    width: 24px;
+  }
+  .links {
+    gap: 0.7rem;
+  }
+  .container {
+    gap: 1rem;
+    padding: 1rem 15px;
+  }
+}
