@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <a href="/about" className={styles.btn} target="_blank">
-        About
+        VibePaper
       </a>
       <div className={styles.links}>
         {links.map((elm) => (
