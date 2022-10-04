@@ -17,13 +17,13 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <span>Create A Vibe</span>
+            <span>Prove Da Vibe</span>
           </a>
           <Logo />
         </div>
       </div>
       <div className={styles.copyright}>
-        <div>proof of vibes</div>
+        <div>Proof of Vibes</div>
         &nbsp; © {new Date().getFullYear()}
       </div>
     </div>
