@@ -13,7 +13,7 @@ export default function Home() {
         <div className={styles.wrapper}>
           <a
             className={styles.signup}
-            href="https://genadrop.com/mint/vibe"
+            href="/create"
             target="_blank"
             rel="noreferrer"
           >

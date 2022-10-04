@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 
 const RedirectLinks = {
   "/twitter": "https://twitter.com/VibesProof",
+  "/create": "https://www.genadrop.io/mint/vibe",
 };
 
 const Redirect = () => {
